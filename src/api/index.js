@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://krishnaneupaney-bookappfront-6598.zeet.app' });
+const API = axios.create({ baseURL: 'https://bookaxcess-app.herokuapp.com/' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
